@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saqib Hussain  - UI/UX Designer</title>
+    <title>Saqib Hussain - UI/UX Designer</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <style>
@@ -44,7 +44,10 @@
             --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             color: var(--title-color);
             font-weight: 600;
         }
@@ -59,7 +62,7 @@
 
         img {
             max-width: 100%;
-            height: 100% ;
+            height: 100%;
         }
 
         .container {
@@ -110,7 +113,8 @@
             align-items: center;
         }
 
-        .nav__logo, .nav__toggle {
+        .nav__logo,
+        .nav__toggle {
             color: var(--title-color);
             font-weight: 500;
         }
@@ -194,9 +198,10 @@
         }
 
         .home__social {
-            display: grid;
+            display: flex;
             grid-template-columns: max-content;
             row-gap: 1rem;
+            gap: 10%;
         }
 
         .home__social-icon {
@@ -548,7 +553,7 @@
             right: 0;
         }
 
-        .swiper-container-horizontal > .swiper-pagination-bullets {
+        .swiper-container-horizontal>.swiper-pagination-bullets {
             bottom: -2.5rem;
         }
 
@@ -639,7 +644,7 @@
         }
 
         .footer__bg {
-            background-color:#191627;
+            background-color: #191627;
             padding: 2rem 0 3rem;
         }
 
@@ -763,7 +768,7 @@
             .projects__img {
                 width: 200px;
             }
-            
+
             .projects__container {
                 padding: 0 20px;
             }
@@ -836,7 +841,7 @@
             .nav__icon,
             .nav__close,
             .nav__toggle {
-            display: none;
+                display: none;
             }
 
             .nav__list {
@@ -937,6 +942,7 @@
 
         /* For large devices */
         @media screen and (min-width: 1024px) {
+
             .header,
             .main,
             .footer__container {
@@ -947,9 +953,9 @@
                 width: 320px;
             }
 
-            .home__social {
+            /* .home__social {
                 transform: translateX(-6rem);
-            }
+            } */
 
             .projects__container {
                 width: 750px;
@@ -1063,7 +1069,7 @@
         }
 
         .carousel-view img {
-          
+
             width: auto;
             margin: 0 auto;
             object-fit: contain;
@@ -1161,58 +1167,62 @@
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
-            <div class="home__container container grid">
+            <div class="home__container container">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="https://www.linkedin.com/in/saqib-hussain1/" target="_blank" class="home__social-icon">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
+                        <div>
+                            <a href="https://www.linkedin.com/in/saqib-hussain1/" target="_blank"
+                                class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <br>
+                            <a href="https://github.com/saqi973" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                            <div class="home__data">
+                                <h1 class="home__title">
+                                    Hi, I'm Saqib Hussain
+                                </h1>
+                                <h3 class="home__subtitle">UI/UX Designer</h3>
+                                <p class="home__description">
+                                    <a href="#">Freelancer</a>
+                                </p>
+                                <a href="#contact" class="home__button button button--flex">
+                                    Contact Me <i class="uil uil-message button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
 
-                        <a href="https://github.com/saqi973" target="_blank" class="home__social-icon">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-
-                    <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                                 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                                 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
                                                 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                            </mask>
-                            <g mask="url(#mask0)" style="display: flex; justify-content: center; align-items: center;">
-                                <path
-                                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                </mask>
+                                <g mask="url(#mask0)"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <path
+                                        d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x="0" y="-60" href="assets\img\general\saqib1.png" />
-                            </g>
-                        </svg>
+                                    <image class="home__blob-img" x="0" y="-60" href="assets\img\general\saqib1.png" />
+                                </g>
+                            </svg>
+                        </div>
                     </div>
 
-                    <div class="home__data">
-                        <h1 class="home__title">
-                            Hi, I'm Saqib Hussain
-                        </h1>
-                        <h3 class="home__subtitle">UI/UX Designer</h3>
-                        <p class="home__description">
-                            <a href="#">Freelancer</a>
-                        </p>
-                        <a href="#contact" class="home__button button button--flex">
-                            Contact Me <i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
                 </div>
-
-                <div class="home__scroll">
+                <div class="home__scroll"
+                    style="display: flex; justify-content: center; align-items: center; padding-top: 40px;">
                     <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                         <span class="home__scroll-name">Scroll down</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
                     </a>
                 </div>
-            </div>
         </section>
 
         <!--==================== ABOUT ====================-->
@@ -1225,7 +1235,8 @@
 
                 <div class="about__data">
                     <p class="about__description">
-                       UI/UX Designer with 3+ years of experience crafting user-focused websites and apps that balance functionality with modern design." 🎨 🖥️
+                        UI/UX Designer with 3+ years of experience crafting user-focused websites and apps that balance
+                        functionality with modern design." 🎨 🖥️
                     </p>
                     <div class="about__info">
                         <div>
@@ -1287,7 +1298,7 @@
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__js"></span>
                                 </div>
-                            </div>  
+                            </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Feedback</h3>
@@ -1296,7 +1307,7 @@
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__js"></span>
                                 </div>
-                            </div>  
+                            </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Simplicity</h3>
@@ -1305,10 +1316,10 @@
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__js"></span>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                     </div>
-                    
+
                     <!--==================== SKILL 2 ====================-->
                     <div class="skills__content skills__close">
                         <div class="skills__header">
@@ -1316,7 +1327,8 @@
 
                             <div>
                                 <h1 class="skills__title">UX Research</h1>
-                                <span class="skills__subtitle">Diving deep into user research for meaningful design.</span>
+                                <span class="skills__subtitle">Diving deep into user research for meaningful
+                                    design.</span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -1424,7 +1436,7 @@
                             <div>
                                 <h3 class="qualification__title">
                                     <a>
-                                        Bachelor in  Business Administration
+                                        Bachelor in Business Administration
                                     </a>
                                 </h3>
                                 <span class="qualification__subtitle">Pakistan - University KIU</span>
@@ -1439,30 +1451,30 @@
                                 <div class="qualification__line"></div>
                             </div>
                         </div>
-                    
-                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                    <div class="qualification__content" data-content id="work">
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">
-                                    <a>Web Developer </a>
-                                </h3>
-                                <span class="qualification__subtitle">Gilgit - TechCave</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    03/2023 - Present
-                                </div>
-                            </div>
 
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <div class="qualification__line"></div>
+                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">
+                                        <a>Web Developer </a>
+                                    </h3>
+                                    <span class="qualification__subtitle">Gilgit - TechCave</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        03/2023 - Present
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <div class="qualification__line"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <!--==================== PROJECTS ====================-->
@@ -1490,7 +1502,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <!--==================== PROJECT 2 ====================-->
                     <div class="projects__content grid swiper-slide">
                         <img src="./assets/img/user/4.png" alt="App Design project's image" class="projects__img">
@@ -1509,7 +1521,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <!--==================== PROJECT 3 ====================-->
                     <div class="projects__content grid swiper-slide">
                         <img src="./assets/img/Saas/3.jpg" alt="Project image" class="projects__img">
@@ -1528,10 +1540,11 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <!--==================== PROJECT 4 ====================-->
                     <div class="projects__content grid swiper-slide">
-                        <img src="./assets/img/ECommerce/Desktop218.jpg" alt="E Commerce project's image" class="projects__img">
+                        <img src="./assets/img/ECommerce/Desktop218.jpg" alt="E Commerce project's image"
+                            class="projects__img">
 
                         <div class="projects__data">
                             <h3 class="projects__title">E Commerce </h3>
@@ -1550,7 +1563,8 @@
 
                     <!--==================== PROJECT 5 ====================-->
                     <div class="projects__content grid swiper-slide">
-                        <img src="./assets/img/dashboard/Desktop-62.jpg" alt="Dashboard project's image" class="projects__img">
+                        <img src="./assets/img/dashboard/Desktop-62.jpg" alt="Dashboard project's image"
+                            class="projects__img">
 
                         <div class="projects__data">
                             <h3 class="projects__title">Dashboard</h3>
@@ -1664,7 +1678,8 @@
                         </div>
                         <div class="contact__submit">
                             <div>
-                                <input type="button" value="Send Message" class="button button--flex" id="contact__button">
+                                <input type="button" value="Send Message" class="button button--flex"
+                                    id="contact__button">
                             </div>
                             <div id="contact__status"></div>
                         </div>
@@ -1720,128 +1735,128 @@
     <!-- Multi Project Popup Modal for Projects 1 to 7 -->
     <!-- Modal 1 -->
     <div id="popupModal1" class="popup-modal">
-      <div class="popup-content">
-        <button id="closePopup1" class="close-btn">&times;</button>
-        <div class="thumbnail-grid" id="thumbnailGrid1"></div>
-        <div class="carousel-view" id="carouselView1">
-          <img id="popupImage1" src="" alt="Project Image">
-          <button id="prevBtn1" class="carousel-btn prev-btn">
-            <i class="uil uil-angle-left"></i>
-          </button>
-          <button id="nextBtn1" class="carousel-btn next-btn">
-            <i class="uil uil-angle-right"></i>
-          </button>
-          <button id="backToGrid1" class="backToGrid">Back</button>
+        <div class="popup-content">
+            <button id="closePopup1" class="close-btn">&times;</button>
+            <div class="thumbnail-grid" id="thumbnailGrid1"></div>
+            <div class="carousel-view" id="carouselView1">
+                <img id="popupImage1" src="" alt="Project Image">
+                <button id="prevBtn1" class="carousel-btn prev-btn">
+                    <i class="uil uil-angle-left"></i>
+                </button>
+                <button id="nextBtn1" class="carousel-btn next-btn">
+                    <i class="uil uil-angle-right"></i>
+                </button>
+                <button id="backToGrid1" class="backToGrid">Back</button>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Modal 2 -->
     <div id="popupModal2" class="popup-modal">
-      <div class="popup-content">
-        <button id="closePopup2" class="close-btn">&times;</button>
-        <div class="thumbnail-grid" id="thumbnailGrid2"></div>
-        <div class="carousel-view" id="carouselView2">
-          <img id="popupImage2" src="" alt="Project Image">
-          <button id="prevBtn2" class="carousel-btn prev-btn">
-            <i class="uil uil-angle-left"></i>
-          </button>
-          <button id="nextBtn2" class="carousel-btn next-btn">
-            <i class="uil uil-angle-right"></i>
-          </button>
-          <button id="backToGrid2" class="backToGrid">Back</button>
+        <div class="popup-content">
+            <button id="closePopup2" class="close-btn">&times;</button>
+            <div class="thumbnail-grid" id="thumbnailGrid2"></div>
+            <div class="carousel-view" id="carouselView2">
+                <img id="popupImage2" src="" alt="Project Image">
+                <button id="prevBtn2" class="carousel-btn prev-btn">
+                    <i class="uil uil-angle-left"></i>
+                </button>
+                <button id="nextBtn2" class="carousel-btn next-btn">
+                    <i class="uil uil-angle-right"></i>
+                </button>
+                <button id="backToGrid2" class="backToGrid">Back</button>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Modal 3 -->
     <div id="popupModal3" class="popup-modal">
-      <div class="popup-content">
-        <button id="closePopup3" class="close-btn">&times;</button>
-        <div class="thumbnail-grid" id="thumbnailGrid3"></div>
-        <div class="carousel-view" id="carouselView3">
-          <img id="popupImage3" src="" alt="Project Image">
-          <button id="prevBtn3" class="carousel-btn prev-btn">
-            <i class="uil uil-angle-left"></i>
-          </button>
-          <button id="nextBtn3" class="carousel-btn next-btn">
-            <i class="uil uil-angle-right"></i>
-          </button>
-          <button id="backToGrid3" class="backToGrid">Back</button>
+        <div class="popup-content">
+            <button id="closePopup3" class="close-btn">&times;</button>
+            <div class="thumbnail-grid" id="thumbnailGrid3"></div>
+            <div class="carousel-view" id="carouselView3">
+                <img id="popupImage3" src="" alt="Project Image">
+                <button id="prevBtn3" class="carousel-btn prev-btn">
+                    <i class="uil uil-angle-left"></i>
+                </button>
+                <button id="nextBtn3" class="carousel-btn next-btn">
+                    <i class="uil uil-angle-right"></i>
+                </button>
+                <button id="backToGrid3" class="backToGrid">Back</button>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Modal 4 -->
     <div id="popupModal4" class="popup-modal">
-      <div class="popup-content">
-        <button id="closePopup4" class="close-btn">&times;</button>
-        <div class="thumbnail-grid" id="thumbnailGrid4"></div>
-        <div class="carousel-view" id="carouselView4">
-          <img id="popupImage4" src="" alt="Project Image">
-          <button id="prevBtn4" class="carousel-btn prev-btn">
-            <i class="uil uil-angle-left"></i>
-          </button>
-          <button id="nextBtn4" class="carousel-btn next-btn">
-            <i class="uil uil-angle-right"></i>
-          </button>
-          <button id="backToGrid4" class="backToGrid">Back</button>
+        <div class="popup-content">
+            <button id="closePopup4" class="close-btn">&times;</button>
+            <div class="thumbnail-grid" id="thumbnailGrid4"></div>
+            <div class="carousel-view" id="carouselView4">
+                <img id="popupImage4" src="" alt="Project Image">
+                <button id="prevBtn4" class="carousel-btn prev-btn">
+                    <i class="uil uil-angle-left"></i>
+                </button>
+                <button id="nextBtn4" class="carousel-btn next-btn">
+                    <i class="uil uil-angle-right"></i>
+                </button>
+                <button id="backToGrid4" class="backToGrid">Back</button>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Modal 5 -->
     <div id="popupModal5" class="popup-modal">
-      <div class="popup-content">
-        <button id="closePopup5" class="close-btn">&times;</button>
-        <div class="thumbnail-grid" id="thumbnailGrid5"></div>
-        <div class="carousel-view" id="carouselView5">
-          <img id="popupImage5" src="" alt="Project Image">
-          <button id="prevBtn5" class="carousel-btn prev-btn">
-            <i class="uil uil-angle-left"></i>
-          </button>
-          <button id="nextBtn5" class="carousel-btn next-btn">
-            <i class="uil uil-angle-right"></i>
-          </button>
-          <button id="backToGrid5" class="backToGrid">Back</button>
+        <div class="popup-content">
+            <button id="closePopup5" class="close-btn">&times;</button>
+            <div class="thumbnail-grid" id="thumbnailGrid5"></div>
+            <div class="carousel-view" id="carouselView5">
+                <img id="popupImage5" src="" alt="Project Image">
+                <button id="prevBtn5" class="carousel-btn prev-btn">
+                    <i class="uil uil-angle-left"></i>
+                </button>
+                <button id="nextBtn5" class="carousel-btn next-btn">
+                    <i class="uil uil-angle-right"></i>
+                </button>
+                <button id="backToGrid5" class="backToGrid">Back</button>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Modal 6 -->
     <div id="popupModal6" class="popup-modal">
-      <div class="popup-content">
-        <button id="closePopup6" class="close-btn">&times;</button>
-        <div class="thumbnail-grid" id="thumbnailGrid6"></div>
-        <div class="carousel-view" id="carouselView6">
-          <img id="popupImage6" src="" alt="Project Image">
-          <button id="prevBtn6" class="carousel-btn prev-btn">
-            <i class="uil uil-angle-left"></i>
-          </button>
-          <button id="nextBtn6" class="carousel-btn next-btn">
-            <i class="uil uil-angle-right"></i>
-          </button>
-          <button id="backToGrid6" class="backToGrid">Back</button>
+        <div class="popup-content">
+            <button id="closePopup6" class="close-btn">&times;</button>
+            <div class="thumbnail-grid" id="thumbnailGrid6"></div>
+            <div class="carousel-view" id="carouselView6">
+                <img id="popupImage6" src="" alt="Project Image">
+                <button id="prevBtn6" class="carousel-btn prev-btn">
+                    <i class="uil uil-angle-left"></i>
+                </button>
+                <button id="nextBtn6" class="carousel-btn next-btn">
+                    <i class="uil uil-angle-right"></i>
+                </button>
+                <button id="backToGrid6" class="backToGrid">Back</button>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Modal 7 -->
     <div id="popupModal7" class="popup-modal">
-      <div class="popup-content">
-        <button id="closePopup7" class="close-btn">&times;</button>
-        <div class="thumbnail-grid" id="thumbnailGrid7"></div>
-        <div class="carousel-view" id="carouselView7">
-          <img id="popupImage7" src="" alt="Project Image">
-          <button id="prevBtn7" class="carousel-btn prev-btn">
-            <i class="uil uil-angle-left"></i>
-          </button>
-          <button id="nextBtn7" class="carousel-btn next-btn">
-            <i class="uil uil-angle-right"></i>
-          </button>
-          <button id="backToGrid7" class="backToGrid">Back</button>
+        <div class="popup-content">
+            <button id="closePopup7" class="close-btn">&times;</button>
+            <div class="thumbnail-grid" id="thumbnailGrid7"></div>
+            <div class="carousel-view" id="carouselView7">
+                <img id="popupImage7" src="" alt="Project Image">
+                <button id="prevBtn7" class="carousel-btn prev-btn">
+                    <i class="uil uil-angle-left"></i>
+                </button>
+                <button id="nextBtn7" class="carousel-btn next-btn">
+                    <i class="uil uil-angle-right"></i>
+                </button>
+                <button id="backToGrid7" class="backToGrid">Back</button>
+            </div>
         </div>
-      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -1877,12 +1892,12 @@
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
                 const target = document.querySelector(tab.dataset.target);
-                
+
                 tabContents.forEach(tabContent => {
                     tabContent.classList.remove('qualification__active');
                 });
                 target.classList.add('qualification__active');
-                
+
                 tabs.forEach(tab => {
                     tab.classList.remove('qualification__active');
                 });
@@ -1896,11 +1911,11 @@
 
         function toggleSkills() {
             let itemClass = this.parentNode.className;
-            
+
             for (let i = 0; i < skillsContent.length; i++) {
                 skillsContent[i].className = 'skills__content skills__close';
             }
-            
+
             if (itemClass === 'skills__content skills__close') {
                 this.parentNode.className = 'skills__content skills__open';
             }
@@ -1913,7 +1928,7 @@
         // Scroll up functionality
         function scrollUp() {
             const scrollUp = document.getElementById('scroll-up');
-            if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); 
+            if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
             else scrollUp.classList.remove('show-scroll');
         }
         window.addEventListener('scroll', scrollUp);
@@ -1935,18 +1950,18 @@
         });
 
         // Modal functionality
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Global object to store carousel data for each project
             var carouselData = {};
 
             // Attach event listeners to live link buttons to open modals
             var liveLinkButtons = document.querySelectorAll('.live-link');
-            liveLinkButtons.forEach(function(btn) {
-                btn.addEventListener('click', function(e) {
+            liveLinkButtons.forEach(function (btn) {
+                btn.addEventListener('click', function (e) {
                     e.preventDefault();
                     var project = btn.getAttribute('data-project');
                     var modal = document.getElementById('popupModal' + project);
-                    if(modal) {
+                    if (modal) {
                         modal.style.display = 'flex';
                     }
                 });
@@ -1956,7 +1971,7 @@
             function initCarousel(projectNumber, images) {
                 var modal = document.getElementById('popupModal' + projectNumber);
                 if (!modal) return;
-                
+
                 var thumbnailGrid = document.getElementById('thumbnailGrid' + projectNumber);
                 var carouselView = document.getElementById('carouselView' + projectNumber);
                 var popupImage = document.getElementById('popupImage' + projectNumber);
@@ -1968,7 +1983,7 @@
 
                 // Populate thumbnail grid with card-style images
                 thumbnailGrid.innerHTML = ''; // Clear any existing content
-                images.forEach(function(src, index) {
+                images.forEach(function (src, index) {
                     var thumb = document.createElement('img');
                     thumb.src = src;
                     thumb.alt = "Thumbnail " + (index + 1);
@@ -1976,7 +1991,7 @@
                     thumb.style.height = "auto";
                     thumb.style.margin = "10px";
                     thumb.style.cursor = "pointer";
-                    thumb.addEventListener('click', function() {
+                    thumb.addEventListener('click', function () {
                         currentIndex = index;
                         popupImage.src = images[currentIndex];
                         thumbnailGrid.style.display = 'none';
@@ -1986,24 +2001,24 @@
                     thumbnailGrid.appendChild(thumb);
                 });
 
-                nextBtn.addEventListener('click', function() {
+                nextBtn.addEventListener('click', function () {
                     currentIndex = (currentIndex + 1) % images.length;
                     popupImage.src = images[currentIndex];
                     carouselData[projectNumber].currentIndex = currentIndex;
                 });
 
-                prevBtn.addEventListener('click', function() {
+                prevBtn.addEventListener('click', function () {
                     currentIndex = (currentIndex - 1 + images.length) % images.length;
                     popupImage.src = images[currentIndex];
                     carouselData[projectNumber].currentIndex = currentIndex;
                 });
 
-                backToGrid.addEventListener('click', function() {
+                backToGrid.addEventListener('click', function () {
                     carouselView.style.display = 'none';
                     thumbnailGrid.style.display = 'flex';
                 });
 
-                closeBtn.addEventListener('click', function(e) {
+                closeBtn.addEventListener('click', function (e) {
                     e.stopPropagation(); // Prevents the event from bubbling up
                     modal.style.display = 'none';
                     // Reset view to show thumbnail grid on modal close
@@ -2041,53 +2056,53 @@
                 '../assets/img/Home/14.png',
 
             ]);
-            
+
             initCarousel(2, [
                 '../assets/img/user/1.png',
                 '../assets/img/user/2.png',
                 '../assets/img/user/3.png',
                 '../assets/img/user/4.png',
             ]);
-            
+
             initCarousel(3, [
-            '../assets/img/Saas/1.jpg',
-            '../assets/img/Saas/2.jpg',
-            '../assets/img/Saas/3.jpg',
-            '../assets/img/Saas/4.jpg',
+                '../assets/img/Saas/1.jpg',
+                '../assets/img/Saas/2.jpg',
+                '../assets/img/Saas/3.jpg',
+                '../assets/img/Saas/4.jpg',
             ]);
-            
+
             initCarousel(4, [
                 '../assets/img/ECommerce/Desktop-18.jpg',
                 '../assets/img/ECommerce/Desktop2-.jpg',
-               '../assets/img/ECommerce/Desktop21.jpg',
-                  '../assets/img/ECommerce/Desktop22.jpg',
+                '../assets/img/ECommerce/Desktop21.jpg',
+                '../assets/img/ECommerce/Desktop22.jpg',
                 '../assets/img/ECommerce/Desktop23.jpg',
-               '../assets/img/ECommerce/Desktop24.jpg',
-                  '../assets/img/ECommerce/Desktop25.jpg',
+                '../assets/img/ECommerce/Desktop24.jpg',
+                '../assets/img/ECommerce/Desktop25.jpg',
                 '../assets/img/ECommerce/Desktop26.jpg',
-               '../assets/img/ECommerce/Desktop27.jpg',
+                '../assets/img/ECommerce/Desktop27.jpg',
                 '../assets/img/ECommerce/Desktop28.jpg',
                 '../assets/img/ECommerce/Desktop29.jpg',
-               '../assets/img/ECommerce/Desktop30.jpg',
-                  '../assets/img/ECommerce/Desktop32.jpg',
+                '../assets/img/ECommerce/Desktop30.jpg',
+                '../assets/img/ECommerce/Desktop32.jpg',
                 '../assets/img/ECommerce/Desktop31.jpg',
-               '../assets/img/ECommerce/Desktop33.jpg',
-                  '../assets/img/ECommerce/Desktop34.jpg',
+                '../assets/img/ECommerce/Desktop33.jpg',
+                '../assets/img/ECommerce/Desktop34.jpg',
                 '../assets/img/ECommerce/Desktop218.jpg',
-               '../assets/img/ECommerce/HOME PAGE.jpg',
+                '../assets/img/ECommerce/HOME PAGE.jpg',
             ]);
-            
+
             initCarousel(5, [
-            '../assets/img/dashboard/Desktop-54.jpg',
-            '../assets/img/dashboard/Desktop-55.jpg',
-            '../assets/img/dashboard/Desktop-62.jpg',
-            '../assets/img/dashboard/Desktop-75.png',   
-            '../assets/img/dashboard/Overview.png',
+                '../assets/img/dashboard/Desktop-54.jpg',
+                '../assets/img/dashboard/Desktop-55.jpg',
+                '../assets/img/dashboard/Desktop-62.jpg',
+                '../assets/img/dashboard/Desktop-75.png',
+                '../assets/img/dashboard/Overview.png',
             ]);
-            
+
             initCarousel(6, [
 
-               '../assets/img/landing/4.jpg',
+                '../assets/img/landing/4.jpg',
                 '../assets/img/landing/7.jpg',
                 '../assets/img/landing/8.jpg',
                 '../assets/img/landing/cop1.jpg',
@@ -2099,23 +2114,23 @@
 
 
             ]);
-            
+
             initCarousel(7, [
-               '../assets/img/website/1.png',
-               '../assets/img/website/2.png',
-               '../assets/img/website/3.png',
-               '../assets/img/website/4.png',
-               '../assets/img/website/5.png',
+                '../assets/img/website/1.png',
+                '../assets/img/website/2.png',
+                '../assets/img/website/3.png',
+                '../assets/img/website/4.png',
+                '../assets/img/website/5.png',
             ]);
 
             // Global arrow key navigation for active modal carousel
-            window.addEventListener('keydown', function(e) {
+            window.addEventListener('keydown', function (e) {
                 var activeModal = document.querySelector('.popup-modal[style*="display: flex"]');
-                if(!activeModal) return;
+                if (!activeModal) return;
                 var projectNumber = activeModal.id.replace('popupModal', '');
                 var carousel = carouselData[projectNumber];
-                if(!carousel) return;
-                if(e.key === 'ArrowRight') {
+                if (!carousel) return;
+                if (e.key === 'ArrowRight') {
                     carousel.currentIndex = (carousel.currentIndex + 1) % carousel.images.length;
                     carousel.popupImage.src = carousel.images[carousel.currentIndex];
                 } else if (e.key === 'ArrowLeft') {
@@ -2133,8 +2148,8 @@
             });
 
             // Global click to close modal when clicking outside the popup content
-            window.addEventListener('click', function(e) {
-                if(e.target.classList.contains('popup-modal')) {
+            window.addEventListener('click', function (e) {
+                if (e.target.classList.contains('popup-modal')) {
                     e.target.style.display = 'none';
                     // Reset all modals to show thumbnail grid
                     for (let i = 1; i <= 7; i++) {
